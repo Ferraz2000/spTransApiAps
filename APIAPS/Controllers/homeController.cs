@@ -14,13 +14,6 @@ namespace APIAPS.Controllers
     public class homeController : ApiController
     {
 
-        public homeController()
-        {
-
-
-        }
-
-
         // Get api/<controller>/5
         [Route("BuscarLinha/{linha}")]
         [HttpGet]
@@ -48,19 +41,6 @@ namespace APIAPS.Controllers
             var result = await spTransController.Previsao(codigoParada, codigoLinha);
             return result;
         }
-        // POST api/<controller>
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<controller>/5
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<controller>/5
-        public void Delete(int id)
-        {
-        }
+    
     }
 }

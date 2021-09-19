@@ -10,7 +10,6 @@ namespace APIAPS
         public static void Register(HttpConfiguration config)
         {
             // Configuração e serviços de API Web
-
             // Rotas de API Web
             config.MapHttpAttributeRoutes();
 
